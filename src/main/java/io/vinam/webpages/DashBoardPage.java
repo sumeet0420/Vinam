@@ -10,6 +10,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.DiscoveryStrategy.Explicit;
 
@@ -23,17 +24,21 @@ public class DashBoardPage {
 	@FindBy(how = How.XPATH, using = "//*[text()='Automation']") 
 	private WebElement Automation;
    public DashBoardPage(WebDriver driver){
-	this.driver =driver;
+	this.driver = driver;
 	PageFactory.initElements(driver,this);
    }
 
 	
 	public void verifyPageName() {
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOfAllElements(DashBoard));			
-		
+		 // WebDriverWait wait = new WebDriverWait(driver, 20);
+		  //wait.until(ExpectedConditions.titleContains("Dashboard-Mailercloud"));
+	      String str = driver.getTitle();
+	      Assert.assertTrue(str.contains("Dashboard")); 
+		 
    }
+
+
 	public void clickAutomationLink() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.elementToBeClickable(MailerCloud));
