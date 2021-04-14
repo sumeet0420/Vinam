@@ -70,3 +70,71 @@
 12:28:04.047 [main] INFO  devp - Select from list
 12:28:06.191 [main] INFO  devp - Click on continue button
 12:28:06.881 [main] INFO  devp - select end date
+19:49:41.456 [main] INFO  devp - Browser Opened !!
+19:49:42.012 [main] INFO  devp - Email id  entered
+19:49:42.309 [main] INFO  devp - Password  entered
+19:49:42.522 [main] INFO  devp - Clicked on login button
+19:49:43.485 [main] INFO  devp - Dashboard page verified
+19:49:49.198 [main] INFO  devp - Clicked on Automation link
+19:49:49.531 [main] INFO  devp - Clicked on create button
+19:49:52.955 [main] INFO  devp - Page verified
+19:50:16.789 [main] INFO  devp - Browser Opened !!
+19:50:18.276 [main] INFO  devp - Email id  entered
+19:50:19.134 [main] INFO  devp - Password entered
+19:50:19.782 [main] INFO  devp - Successfully clicked on login button
+19:54:03.943 [main] INFO  devp - Browser Opened !!
+19:54:04.350 [main] INFO  devp - Email id  entered
+19:54:04.618 [main] INFO  devp - Password  entered
+19:54:04.744 [main] INFO  devp - Clicked on login button
+19:54:05.832 [main] INFO  devp - Dashboard page verified
+19:54:11.120 [main] INFO  devp - Clicked on Automation link
+19:54:11.464 [main] INFO  devp - Clicked on create button
+19:54:14.902 [main] INFO  devp - Page verified
+19:54:34.216 [main] INFO  devp - Browser Opened !!
+19:55:34.014 [main] INFO  devp - Browser Opened !!
+19:55:34.581 [main] INFO  devp - Email id  entered
+19:55:34.834 [main] INFO  devp - Password  entered
+19:55:34.965 [main] INFO  devp - Clicked on login button
+19:55:36.694 [main] INFO  devp - Dashboard page verified
+19:55:43.812 [main] INFO  devp - Clicked on Automation link
+19:55:44.075 [main] INFO  devp - Clicked on create button
+19:55:47.943 [main] INFO  devp - Page verified
+19:55:48.489 [main] INFO  devp - Name Entered
+19:55:48.679 [main] INFO  devp - Click on chose target
+19:55:49.690 [main] INFO  devp - Chose target page verified
+19:55:52.292 [main] INFO  devp - Select from list
+19:55:54.554 [main] INFO  devp - Click on continue button
+19:56:14.763 [main] INFO  devp - Browser Opened !!
+19:56:16.861 [main] INFO  devp - Email id  entered
+19:56:17.561 [main] INFO  devp - Password entered
+19:56:18.091 [main] INFO  devp - Successfully clicked on login button
+19:57:02.637 [main] INFO  devp - Browser Opened !!
+19:57:03.075 [main] INFO  devp - Email id  entered
+19:57:03.301 [main] INFO  devp - Password  entered
+19:57:03.422 [main] INFO  devp - Clicked on login button
+19:57:04.791 [main] INFO  devp - Dashboard page verified
+19:57:10.790 [main] INFO  devp - Clicked on Automation link
+19:57:11.157 [main] INFO  devp - Clicked on create button
+19:57:14.568 [main] INFO  devp - Page verified
+19:57:35.921 [main] INFO  devp - Browser Opened !!
+19:57:38.217 [main] INFO  devp - Email id  entered
+19:57:38.855 [main] INFO  devp - Password entered
+19:57:39.437 [main] INFO  devp - Successfully clicked on login button
+19:57:40.853 [main] INFO  devp - Email id  entered
+19:57:42.314 [main] INFO  devp - Password entered
+19:58:43.636 [main] INFO  devp - Browser Opened !!
+19:58:44.138 [main] INFO  devp - Email id  entered
+19:58:44.338 [main] INFO  devp - Password  entered
+19:58:44.449 [main] INFO  devp - Clicked on login button
+19:58:45.379 [main] INFO  devp - Dashboard page verified
+19:58:51.176 [main] INFO  devp - Clicked on Automation link
+19:58:51.977 [main] INFO  devp - Clicked on create button
+19:58:55.424 [main] INFO  devp - Page verified
+19:59:26.416 [main] INFO  devp - Browser Opened !!
+19:59:27.241 [main] INFO  devp - Email id  entered
+19:59:27.970 [main] INFO  devp - Password entered
+19:59:28.530 [main] INFO  devp - Successfully clicked on login button
+19:59:56.216 [main] INFO  devp - Browser Opened !!
+19:59:57.275 [main] INFO  devp - Email id  entered
+19:59:58.000 [main] INFO  devp - Password entered
+19:59:58.674 [main] INFO  devp - Successfully clicked on login button

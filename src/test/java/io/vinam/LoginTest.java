@@ -1,33 +1,32 @@
 package io.vinam;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
+import io.vinam.base.TestBase;
+import io.vinam.webpages.ExcelUtils;
+import io.vinam.webpages.ScreenShotUtility;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-import io.vinam.base.TestBase;
-import io.vinam.webpages.DashBoardPage;
-import io.vinam.webpages.LoginPage;
-import io.vinam.webpages.ScreenShotUtility;
+public class LoginTest extends TestBase {
 
-@Test
-public class LoginTest extends TestBase{
+    @DataProvider(name = "loginDetails")
+    public Object[][] getLoginDetails() throws Exception {
+        return ExcelUtils.readExcelData("AutomationCreation", "Sheet2");
+    }
 
-	DashBoardPage board = PageFactory.initElements(driver, DashBoardPage.class);
-	public void login() throws InterruptedException {
-		
+    @Test(dataProvider = "loginDetails")
+    public void login(String userName, String password) throws InterruptedException {
         login.enterEmail(properties.getProperty("EmailID"));
         ScreenShotUtility.takeScreenShot(driver);
         log.info("Email id  entered");
         login.enterPassword(properties.getProperty("Password"));
         ScreenShotUtility.takeScreenShot(driver);
         log.info("Password entered");
-		login.clickLoginButton();
-		ScreenShotUtility.takeScreenShot(driver);
-		log.info("Successfully clicked on login button");
-		//board.verifyPageName();
-		ScreenShotUtility.takeScreenShot(driver);
-				
-		
-	}
+        login.clickLoginButton();
+        ScreenShotUtility.takeScreenShot(driver);
+        log.info("Successfully clicked on login button");
+        //board.verifyPageName();
+        ScreenShotUtility.takeScreenShot(driver);
+    }
+
 }

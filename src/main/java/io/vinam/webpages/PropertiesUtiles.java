@@ -6,13 +6,17 @@ import java.util.Properties;
 
 public class PropertiesUtiles {
 
-	public static Properties loadPropertiesFile() throws IOException {
-	Properties config = new Properties();
-	FileInputStream  fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\Config-SIT.properties");
-    config.load(fis);
-    
-    return config;
-    
-	}
-	
+    private PropertiesUtiles() {
+
+    }
+
+    public static Properties loadPropertiesFile(String environment) throws IOException {
+        Properties config = new Properties();
+        final String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\Config-" + environment + ".properties";
+        try (FileInputStream fis = new FileInputStream(filePath)) {
+            config.load(fis);
+            return config;
+        }
+    }
+
 }

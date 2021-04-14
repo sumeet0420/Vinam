@@ -1,5 +1,6 @@
 package io.vinam;
 
+import io.vinam.webpages.ExcelUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ public class DataProviderTest {
     }
 
     @DataProvider(name = "data")
-    public Object[][] data() {
-        return new String[][]{{"nathe"}};
+    public Object[][] data() throws Exception {
+        return ExcelUtils.readExcelData("AutomationCreation", "Sheet1");
     }
 }
