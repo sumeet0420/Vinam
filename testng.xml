@@ -4,7 +4,7 @@
         <paramter name="env" value="SIT"/>
         <classes>
             <class name="io.vinam.AutomationCreation"/>
-            <class name="io.vinam.LoginTest"/>
+<!--            <class name="io.vinam.LoginTest"/>-->
         </classes>
     </test>
 </suite>

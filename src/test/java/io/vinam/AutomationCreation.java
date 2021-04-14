@@ -2,14 +2,12 @@ package io.vinam;
 
 import io.vinam.base.TestBase;
 import io.vinam.webpages.ScreenShotUtility;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AutomationCreation extends TestBase {
 
-    @Test(dataProvider = "data")
+    @Test(dataProvider = "data", dataProviderClass = DataProviders.class)
     public void Automation(String name) throws InterruptedException {
-
         login.enterEmail(properties.getProperty("EmailID"));
         log.info("Email id  entered");
         login.enterPassword(properties.getProperty("Password"));
@@ -45,14 +43,12 @@ public class AutomationCreation extends TestBase {
         automation.clickContinueButton();
         Thread.sleep(2000);
         log.info("Click on continue button");
-        automation.clickEndDate();
+        automation.clickStartDate("Apr 2021 21");
+        log.info("select start date");
+        ScreenShotUtility.takeScreenShot(driver);
+        automation.clickEndDate("May 2021 15");
         ScreenShotUtility.takeScreenShot(driver);
         log.info("select end date");
         automation.clickContinue();
-    }
-
-    @DataProvider(name = "data")
-    public Object[][] data() {
-        return new String[][]{{"nathe"}};
     }
 }
