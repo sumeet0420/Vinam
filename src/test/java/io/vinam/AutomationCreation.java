@@ -1,15 +1,9 @@
 package io.vinam;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import io.vinam.base.TestBase;
+import io.vinam.webpages.ScreenShotUtility;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import io.vinam.base.TestBase;
-import io.vinam.webpages.AutomationPage;
-import io.vinam.webpages.DashBoardPage;
-import io.vinam.webpages.LoginPage;
-import io.vinam.webpages.ScreenShotUtility;
 
 
 public class AutomationCreation extends TestBase {
