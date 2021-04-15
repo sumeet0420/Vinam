@@ -43,10 +43,10 @@ public class AutomationCreation extends TestBase {
         automation.clickContinueButton();
         Thread.sleep(2000);
         log.info("Click on continue button");
-        automation.clickStartDate("Apr 2021 21");
+        automation.clickStartDate(0);
         log.info("select start date");
         ScreenShotUtility.takeScreenShot(driver);
-        automation.clickEndDate("May 2021 15");
+        automation.clickEndDate(7);
         ScreenShotUtility.takeScreenShot(driver);
         log.info("select end date");
         automation.clickContinue();

@@ -110,6 +110,11 @@ public class AutomationPage {
         driver.findElements(By.xpath("//span[contains(@class,'cell day')  and text()='" + dateToCheck.getDayOfMonth() + "']")).get(0).click();
     }
 
+    public void clickStartDate(int daysToAdd) {
+        final String startDate = LocalDate.now().plusDays(daysToAdd).format(DATE_FORMAT_CALENDAR);
+        clickStartDate(startDate);
+    }
+
     public void clickEndDate(String date) {
         final WebElement endDate = calendars.get(1);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", endDate);
@@ -121,6 +126,11 @@ public class AutomationPage {
             calendarNextArrows.get(1).click();
         }
         driver.findElements(By.xpath("//span[contains(@class,'cell day')  and text()='" + dateToCheck.getDayOfMonth() + "']")).get(1).click();
+    }
+
+    public void clickEndDate(int daysToAdd) {
+        final String endDate = LocalDate.now().plusDays(daysToAdd).format(DATE_FORMAT_CALENDAR);
+        clickEndDate(endDate);
     }
 
     public void clickContinue() {
